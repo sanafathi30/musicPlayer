@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/musicPlayer/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <span>^</span>
+            <span>Now playing</span>
+            <span>...</span>
+        </div>
+        <div class="music-img">
+            <img src="/musicPlayer/img/depositphotos_19704913-young-woman-enjoying-music.webp" alt="" />
+        </div>
+        <div class="music-info">
+            <div id="music-name" class="item"></div>
+            <div id="singer" class="item">Enrique Iglesias</div>
+        </div>
+        <div class="progressBar">
+            <input type="range" class="input" value="0" min="0" max="100" />
+            <div class="timeBar">
+                <span class="currentTime">00:00</span>
+                <span class="duration">00:00</span>
+            </div>
+        </div>
+        <div class="player">
+            <div class="repeat icon">*</div>
+            <div>
+                <audio src="" class="music"></audio>
+                <span class="rewired icon"> < </span>
+                <span class="play icon"> || </span>
+                <span class="forward icon"> > </span>
+            </div>
+            <div class="musicList icon">#</div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <ul class="songList d-none">
+            <div class="songItem1">
+                <span># Music List</span> <span class="close">*</span>
+            </div>
+            <li class="songItem">
+                <div>
+                    <audio src="/musicPlayer/audio/music1.mp3" class="songs"></audio>
+                    <p class="musicName">hiiii</p>
+                    <!-- <p class="itemsong singerName">hfuhf</p> -->
+                </div>
+                <div>
+                    <span class="musicTime"></span>
+                </div>
+            </li>
+
+            <li class="songItem">
+                <div>
+                    <audio src="/musicPlayer/audio/music2.mp3" class="songs"></audio>
+                    <p class="musicName">hiiii</p>
+                    <!-- <p class="itemsong singerName">hfuhf</p> -->
+                </div>
+                <div>
+                    <span class="musicTime"></span>
+                </div>
+            </li>
+            <li class="songItem">
+                <div>
+                    <audio src="/musicPlayer/audio/music3.mp3" class="songs"></audio>
+                    <p class="musicName">hiiii</p>
+                    <!-- <p class="itemsong singerName">hfuhf</p> -->
+                </div>
+                <div>
+                    <span class="musicTime"></span>
+                </div>
+            </li>
+            <li class="songItem">
+                <div>
+                    <audio src="/musicPlayer/audio/music4.mp3" class="songs"></audio>
+                    <p class="musicName">hiiii</p>
+                    <!-- <p class="itemsong singerName">hfuhf</p> -->
+                </div>
+                <div>
+                    <span class="musicTime"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="/musicPlayer/index.js"></script>
+</body>
+
+</html>
